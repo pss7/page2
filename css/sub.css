@@ -1,0 +1,247 @@
+ @charset "utf-8";
+
+ /* 가운데 영역 */
+ .container{width: 1360px; padding: 0 20px; }
+
+ /* 공통 */
+ @keyframes op_effect{
+
+    0%{opacity: 0; transform: translateY(70px);}
+    100%{opacity: 1; transform: translateY(0);}
+
+}
+
+.marquee{display: flex; gap: 0 169px; animation: marquee 9s linear infinite;}
+
+@keyframes marquee {
+     0% { left: 0; }
+     100% { left: -100%; }
+   }
+
+#com_rayout1{padding: 195px 0 94px;}
+.com_rayout1{display: flex; justify-content: space-between;  /*height: 970px;*/}
+#com_rayout2.st{padding: 132px 0 149px ;}
+#com_rayout2.st .com_tit2{margin-bottom: 50px;}
+#com_rayout2.st .com_tit3{margin: 85px 0 0; padding-left: 118px;}
+#com_rayout2.st .com_tit3 h5{margin-bottom: 50px;}
+#com_rayout2.st .com_tit3 h5,
+#com_rayout2.st .com_tit3 p{text-align: left;}
+/*
+#com_rayout2.is-inview{animation-delay: .7s;}
+*/
+#com_rayout2{/*min-height: 1683px;*/ padding-bottom: 146px;}
+.com_rayout2_img{/*margin-top: -55px;*/}
+.com_rayout2_img img{display: block;}
+#com_rayout3{padding: 135px 0 160px; /*min-height: 1928px;*/}
+#com_rayout3 .com_rayout3{position: relative;}
+#com_rayout3 .com_tit4{margin-top: 100px; padding-left: 118px;}
+#com_rayout3 .com_tit4 h6{text-align: left;}
+#com_rayout3 .com_rayout2_list{padding-left: 118px;}
+#com_rayout3.st .com_tit4,
+#com_rayout3.st .com_rayout2_list{padding-left: 0;}
+#com_rayout3.st .com_tit4 h6{text-align: center;}
+#com_rayout4{position: relative;  /*min-height: 1226px;*/ padding: 156px 0 214px; background-color:#40466a ;}
+#com_rayout4 .com_rayout4_list{position: relative; margin-top: 70px; padding-left: 114px; display: flex; gap: 0 100px; z-index: 1;}
+#com_rayout4 .com_rayout4_list li{width: 430px;}
+#com_rayout4 .com_rayout4_list li .img img{display: block; margin: 0 auto;}
+#com_rayout4 .com_rayout4_list li .text h5{margin: 40px 0 21px; color: #fff; font-size: 36px; font-weight: 400; font-family: 'Noto Serif KR', serif; text-align: center;}
+#com_rayout4 .com_rayout4_list li .text p{color: #fff; font-size: 17px; color: #fff; line-height: 1.8; letter-spacing: -2px; font-weight: 300;}
+#com_rayout4 .text_img{position: absolute; bottom: 339px; /*left:0; right:0; bottom: 380px;*/}
+#com_rayout4 .text_img img{display: block;}
+.com_rayout4_img{margin-top: 53px; padding-left: 118px;}
+.com_rayout4_img img{display: block;}
+#com_rayout5{position: relative; padding: 216px 0 282px;}
+/*
+#com_rayout5 .text_img.is-inview{animation: none;}
+*/
+.com_rayout5_bg{position: absolute; top:0; left:0; right:0; bottom: 0;  background: url(https://cdn.jsdelivr.net/gh/pss7/page2/images/sub/com_bg.jpg)no-repeat; background-size: cover; z-index: -1;}
+#com_rayout6{position: relative; padding: 160px 0 0; height: 100vh; overflow: hidden;}
+
+#com_rayout6.is-inview{animation: none;}
+#com_rayout6.is-inview .com_rayout6_bg{transform: scale(1);}
+
+#com_rayout6 .com_rayout6_bg{position: absolute; top:0; left:0; right:0; bottom: 0; background: url(https://cdn.jsdelivr.net/gh/pss7/page2/images/sub/com_bg2.jpg)no-repeat; background-size: cover; transform: scale(1.5); transition: all 3s;}
+#com_rayout6 .com_tit2{margin-bottom: 164px;}
+#com_rayout6 .slick_wrap{position: relative; padding-left: 171px;}
+#com_rayout6 .slick_wrap .com_control2{position: absolute; top:48px; left:0;}
+#com_rayout6 .text_box h5{margin-bottom: 40px; font-size: 50px; color: #fff; font-weight: 500; font-family: 'Noto Serif KR', serif; line-height: 1.6;}
+#com_rayout6 .text_box p{ color: #fff; font-size: 20px; line-height: 1.8; font-weight: 300;}
+
+.com_tit h3 em{display: block; font-size: 94px; color: #ecedf1; font-family: 'Constantia'; font-weight: 400; line-height: 108px; letter-spacing: -2px;}
+.com_tit h3 p{margin-top: 31px; font-size: 52px; color: #131313;  font-family: 'Noto Serif KR', serif; font-weight: 500; letter-spacing: -4px; animation-delay: .3s;}
+.com_tit2.rayout{display: flex; align-items: center;}
+.com_tit2.rayout .com_control{position: relative; left: 19px; top: 9px;}
+.com_tit2.rayout .com_control.st{top: 15px;}
+.com_tit2{position: relative; z-index: 2;}
+.com_tit2 + p{margin-top: 62px; font-size: 20px; color: #fff; line-height: 1.8; font-weight: 300;}
+.com_tit2 p{margin-top: 40px; font-size: 20px; color: #fff; line-height: 1.8; font-weight: 300;}
+.com_tit2 h4 em{display: block; margin-bottom: 4px; font-size: 20px; color: #dadbe3; font-family: 'Constantia'; font-weight: 400;}
+.com_tit2 h4 span{display: inline-block; padding-right: 130px; position: relative; font-family: 'Noto Serif KR', serif; font-weight: 500; color: #131313; font-size: 30px;}
+.com_tit2 h4 span::after{content: ''; position: absolute; top:22px; right: 0; width: 102px; height: 1px; background-color: #949494;  transition: all 3s;}
+.com_tit2.st h4 em{color: #fff;}
+.com_tit2.st h4 span{color: #fff;}
+.com_tit3{margin: 42px 0 85px;}
+.com_tit3 h5{margin-bottom: 30px; font-size: 36px; color: #131313; font-family: 'Noto Serif KR', serif; font-weight: 500; text-align: center;}
+.com_tit3 p{font-weight: 500; font-size: 17px; color: #636363; line-height: 1.8; text-align: center;}
+.com_tit4{display: flex; gap: 0 47px; margin-bottom: 48px; align-items: flex-end;}
+.com_tit4 h6{font-size: 30px; color: #131313; font-family: 'Noto Serif KR', serif; font-weight: 500; text-align: center; flex: 1;}
+.com_tit4 span{font-size: 14px; color: #787878;}
+.com_tit5{margin-bottom: 100px;}
+.com_tit5 h3{margin-bottom: 46px;}
+.com_tit5 h3 em{display: block; font-size: 20px; color: #fff; font-family: 'Constantia'; font-weight: 400;}
+.com_tit5 h3 span{display: block; font-size: 55px; font-weight: 400; font-family: 'Noto Serif KR', serif; color: #fff;}
+.com_tit5 p{color: #fff; font-size: 20px; line-height: 1.8; font-weight: 300;} 
+
+.com_img_wrap{position: relative; width: 541px; height: 637px;}
+.com_img_wrap .com_img{position: absolute; top:0; left:0; bottom: 0; width: 0; align-self: flex-start; box-shadow: 20px 46px 51px rgba(0,0,0,.2); border-radius: 10px; overflow: hidden;}
+.com_img_wrap .com_img.is-inview{animation: img_effect 1s .6s both;}
+.com_img_wrap .com_img img{ display: block;}
+
+@keyframes img_effect {
+     
+     0%{width: 0;}
+     100%{width: 541px;}
+
+}
+
+.com_rayout2_list{text-align: center;}
+.com_rayout2_list img{display: block; margin: 0 auto;}
+
+.com_bg{background-color: #f9f9f4;}
+
+.com_slide_wrap{position: relative; padding-bottom: 101px;}
+
+.com_slide{ display: flex; gap: 0 24px; margin:120px 0 0 118px;}
+.com_slide li{width: 767px;}
+.com_slide li .img{border-radius: 10px; overflow: hidden;}
+.com_slide li .img img{display: block;} 
+.com_slide li .text h5{padding-top: 70px; height: 156px; font-size: 36px; color: #131313; font-family: 'Noto Serif KR', serif; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.com_slide li .text p{color: #636363; font-size: 17px; line-height: 1.8;}
+.com_slide.st{margin: 80px 0 0 118px; display: block; margin-left: 0; gap: 0;}
+.com_slide.st li{display: flex;  gap: 0 68px; width: auto;}
+.com_slide.st li .img{flex-shrink: 0;}
+.com_slide.st li .text h5{height: auto; white-space: normal; padding-top: 40px; margin-bottom: 42px;}
+
+.com_control{display: flex; align-items: center; gap: 0 13px; /*position: absolute; top:-179px; left: 365px;*/ z-index: 9;}
+/*
+.com_control.is-inview{animation-delay: .3s;}
+*/
+.com_control .swiper-pagination-current{position: relative; top: -7px;}
+.com_control .swiper-pagination span{font-size: 22px; font-family: 'Constantia'; color:#131313 ;}
+.com_control button{padding: 68px 68px 0 0; }
+.com_control button.swiper-button-prev{background: url(https://cdn.jsdelivr.net/gh/pss7/page2/images/sub/com_btn1.png)no-repeat;}
+.com_control button.swiper-button-next{background: url(https://cdn.jsdelivr.net/gh/pss7/page2/images/sub/com_btn1.png)no-repeat; transform: rotate(-180deg);} 
+.com_control button.swiper-button-prev:hover{background: url(https://cdn.jsdelivr.net/gh/pss7/page2/images/sub/com_btn1_hover.png)no-repeat; transform: rotate(-180deg);}
+.com_control button.swiper-button-next:hover{background: url(https://cdn.jsdelivr.net/gh/pss7/page2/images/sub/com_btn1_hover.png)no-repeat; transform: none;}
+
+.com_control.st button.swiper-button-prev:hover{background: url(https://cdn.jsdelivr.net/gh/pss7/page2/images/sub/com_btn2_hover.png)no-repeat; transform: rotate(-180deg);}
+.com_control.st button.swiper-button-next:hover{background: url(https://cdn.jsdelivr.net/gh/pss7/page2/images/sub/com_btn2_hover.png)no-repeat; transform: none;}
+.com_control2 .count{margin-top: 13px; text-align: center; color: #fff; font-size: 15px;}
+.com_control2 .count em{margin-right: 10px; position: relative; font-weight: 500;}
+.com_control2 .count em::after{content: '/'; position: absolute; top:0; right:-9px; color: #fff;}
+.com_control2 button{display: block; margin-bottom: 8px; padding: 68px 68px 0 0;}
+.com_control2 button.prev{background: url(https://cdn.jsdelivr.net/gh/pss7/page2/images/sub/com_btn1_hover.png)no-repeat; transform: rotate(-180deg);}
+.com_control2 button.next{background: url(https://cdn.jsdelivr.net/gh/pss7/page2/images/sub/com_btn1_hover.png)no-repeat;}
+
+.com_link_list{height: 84px; display: flex; gap: 0 16px; justify-content: center; margin-bottom: 65px; }
+.com_link_list li a.active{background-color: #40466a; color: #fff;}
+.com_link_list li a{display: block; width: 228px; height: 84px; line-height: 84px; text-align: center; background-color: #fff; font-size: 20px; color: #131313; border-radius: 50px; transition: all .3s;}
+.com_link_list li a:hover{background-color: #40466a; color: #fff;}
+.com_link_wrap .com_link_text{margin-bottom:90px;}
+.com_link_wrap h4{margin-bottom: 20px; font-size: 36px; color: #fff; font-family: 'Noto Serif KR', serif; font-weight: 400;  text-align: center;}
+.com_link_wrap p{font-size: 17px; color: #fff; line-height: 1.8; text-align: center; font-weight: 300;}
+.com_link_box{display: flex; justify-content: space-between; flex-wrap: wrap; align-items: flex-start;}
+.com_link_box li{border-radius: 10px; overflow: hidden;}
+.com_link_box li img{display: block;}
+.com_link_box li a{display: block; }
+.com_link_box li a img{display: block;}
+.com_box{position: relative; padding-bottom: 187px; z-index: 1;}
+.com_box:nth-last-of-type(1){padding-bottom: 0;}
+.text_img{position: absolute;}
+.text_img span{display: block; width: 50%; font-size: 356px; color: transparent; -webkit-text-stroke: 1px #fff; white-space: nowrap; font-family: 'Constantia'; letter-spacing: -7px; opacity: .1; line-height: 0.7;}
+.text_img img{display: block;}
+.text_img1{left: 45.3%; bottom: 2444px;}
+.text_img2{/* left: 136px; */ left:0; bottom: 176px;}
+
+.text_img1 .op,
+.text_img2 .op,
+.text_img3 .op{opacity: .5;}
+
+
+#section1 .main_tit{top: 45%;}
+#section1 .main_tit h2 em:nth-child(1){animation-delay: 1s;}
+#section1 .main_tit h2 em:nth-child(2){animation-delay: 1.1s;}
+#section1 .main_tit h2 em:nth-child(3){animation-delay: 1.2s;}
+#section1 .main_tit h2 em:nth-child(4){animation-delay: 1.3s;}
+#section1 .main_tit h2 em:nth-child(5){animation-delay: 1.4s;}
+#section1 .main_tit h2 em:nth-child(6){animation-delay: 1.5s;}
+#section1 .main_tit h2 em:nth-child(7){animation-delay: 1.6s;}
+#section1 .main_tit h2 em:nth-child(8){animation-delay: 1.7s;}
+#section1 .main_tit h2 em:nth-child(9){animation-delay: 1.8s;}
+#section1 .main_tit h2 em:nth-child(10){animation-delay: 1.9s;}
+#section1 .main_img{clip-path: inset(0 0 100% 0); transition: all 1.5s;} 
+
+
+#section1.active .main_img{clip-path: inset(0 0 0 0);}
+
+
+#section1 .main_img img{transform: scale(1);}
+#section1 .main_tit .breadcrumb{margin-bottom: 27px; display: flex; gap: 0 30px; justify-content: center; animation-delay: .7s; } 
+#section1 .main_tit .breadcrumb li{position: relative;}
+#section1 .main_tit .breadcrumb li:last-child:after{display: none;}
+#section1 .main_tit .breadcrumb li::after{content: '>'; position: absolute; top:2px; right:-17px; color: #fff; font-size: 12px;}
+#section1 .main_tit .breadcrumb li a{display: block; font-size: 15px; color: #fff; font-weight: 300;}
+
+/* 하지정맥류 */
+.vein_wrap1 .text_img3{bottom: auto; top: 2560px; left: -494px;}
+.vein_wrap1 #com_rayout4 .text_img{bottom: 349px;}
+.vein_wrap1 .text_img1{bottom: 2434px;}
+
+/* 하지정맥류_골반울혈증후군 */
+.vein_wrap1_2 #com_rayout5{padding: 216px 0 205px;}
+.vein_wrap1_2 #com_rayout4 .text_img{bottom: 390px;}
+.vein_wrap1_2 #com_rayout5 .text_img2{bottom: 133px;}
+
+/* 하지정맥류_심부정맥혈전증 */
+.vein_wrap1_3 #com_rayout5{padding: 216px 0 202px; background: url(https://cdn.jsdelivr.net/gh/pss7/page2/images/sub/com_bg3.jpg)no-repeat; background-size: cover;}
+.vein_wrap1_3 #com_rayout5 .text_img2{bottom: 579px;}
+
+/* 투석혈관_투석혈관조성술 */
+.bloodvessel_wrap1 #com_rayout6 .com_rayout6_bg{background: url(https://cdn.jsdelivr.net/gh/pss7/page2/images/sub/sub2/com_bg.jpg)no-repeat; background-size: cover;}
+.bloodvessel_wrap1 .com_rayout4_list{display: block!important;}
+.bloodvessel_wrap1 .com_rayout4_list li{margin-bottom: 16px;}
+.bloodvessel_wrap1 .com_rayout4_list li:last-child{margin-bottom: 0;}
+.bloodvessel_wrap1 #com_rayout4 .com_rayout4_list{margin-top: 100px;}
+.bloodvessel_wrap1 #com_rayout4 .text_img{bottom: 478px;}
+
+/* 투석혈관_투석혈관재개통술 */
+.bloodvessel_wrap1_2 #com_rayout6 .com_rayout6_bg{background: url(https://cdn.jsdelivr.net/gh/pss7/page2/images/sub/com_bg2.jpg)no-repeat; background-size: cover;}
+.bloodvessel_wrap1_2 #com_rayout5{padding: 216px 0 216px; background: url(https://cdn.jsdelivr.net/gh/pss7/page2/images/sub/com_bg3.jpg)no-repeat; background-size: cover;}
+.bloodvessel_wrap1_2 .text_img2{bottom: 630px;}
+
+/* 말초혈관_당뇨발 */
+.bloodvessel_wrap2 .com_rayout5_bg{background: url(../images/sub/com_bg4.jpg)no-repeat; background-size: cover;}
+.bloodvessel_wrap2 #com_rayout5{padding: 216px 0 203px;}
+.bloodvessel_wrap2 #com_rayout4 .text_img{bottom: 267px;}
+.bloodvessel_wrap2 .text_img2{bottom: 103px;}
+.bloodvessel_wrap2 .text_img1{top: 25.47%; bottom: auto; left: 55%; /*right: -96%;*/}
+
+/* 말초혈관_버거병 */
+.bloodvessel_wrap2_1 #com_rayout4 .com_rayout4_list{margin-top: 183px;}
+.bloodvessel_wrap2_1 #com_rayout4 .text_img{bottom: 243px;}
+
+/* 말초혈관_다리공맥폐쇄증 */
+.bloodvessel_wrap2_2 #com_rayout4 .text_img{bottom: 278px;}
+.bloodvessel_wrap2_2 .com_rayout5_bg{background: url(../images/sub/com_bg5.jpg)no-repeat; background-size: cover;}
+.bloodvessel_wrap2_2 #com_rayout5{padding: 216px 0 224px;}
+.bloodvessel_wrap2_2 .com_rayout2_img{margin-top: 0;}
+.bloodvessel_wrap2_2 .text_img1{top: 21.2%;}
+.bloodvessel_wrap2_2 .text_img2{bottom: 282px; /* bottom: 340px */}
+
+/* 말초혈관_레이노증후군 */
+.bloodvessel_wrap2_3 #com_rayout4 .text_img{bottom: 278px;}
+.bloodvessel_wrap2_3 .com_slide.st li{align-items: center;}
+.bloodvessel_wrap2_3 .com_slide.st li h5{padding-top: 0;}
+.bloodvessel_wrap2_3 #com_rayout3 .com_tit4{margin-top: 73px;}
+.bloodvessel_wrap2_3 #com_rayout5{padding: 216px 0 231px;}
+.bloodvessel_wrap2_3 .text_img1{top: 42.7%;}
