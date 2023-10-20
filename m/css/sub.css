@@ -1,0 +1,803 @@
+@charset "utf-8";
+
+/* 공통 */
+main{margin: 55px 0 -1px;}
+.content_wrap{padding: 100px 0;}
+.skin_wrap{padding: 70px 0 0;}
+#sub_tit{position: relative;}
+
+.main_tit h2{text-align: center;}
+.main_tit.st{top: 29%;;}
+
+.bloodvessel_wrap,
+.introduce_wrap1,
+.introduce_wrap2,
+.introduce_wrap3,
+.surgery_wrap,
+.joint_wrap,
+.medicine_wrap,
+.skin_wrap{margin: -100px 0;}
+
+/* text_img */
+.text_img{ display: flex; align-items: center; gap: 0 35px; animation: text_effect 12s linear infinite; }
+.text_img img{display: block;}
+
+@keyframes text_effect {
+    
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-50%);}
+
+}
+
+/* tab */
+.com_tab01{display: flex; justify-content: center; align-items: center; gap: 0 6px;}
+.com_tab01 li a{display: flex; align-items: center; justify-content: center; height: 32px; font-size: 12px; color: #636363; border: 1px solid #b8b8b8; border-radius: 5px; text-align: center; line-height: 16px; word-break: keep-all;}
+.com_tab01 li a.active{background-color: #a38964; color: #fff;}
+
+/* scroll */
+.scroll{padding: 22px 7px 0 0; position: absolute; left: 50%; transform: translateX(-50%); bottom: 0; padding-bottom: 95px; background-image: url(../images/common/scroll.png); background-repeat: no-repeat; background-size: 100% auto;}
+.scroll::after{content: ''; position: absolute; left: 3px; bottom: 0; width: 1px; height: 87px; background-color: #727272;}
+.scroll img{display: block;}
+
+/* scrollbar */
+.swiper-scrollbar{position: static; width: 100%; height: 3px; margin-top: 20px; background-color: #d8dbe4; border-radius: 0;}
+.swiper-scrollbar-drag{background-color: #131313;}
+
+.main_tit{top: 47%;}
+
+.main_img img{transform: scale(1);}
+.main_tit .breadcrumb{margin-bottom: 3px; display: flex; gap: 0 12px; justify-content: center; animation-delay: .7s; } 
+.main_tit .breadcrumb li{position: relative;}
+.main_tit .breadcrumb li:last-child:after{display: none;}
+.main_tit .breadcrumb li::after{content: '>'; position: absolute; top:0; right:-9px; color: #fff; font-size: 12px;}
+.main_tit .breadcrumb li a{display: block; font-size: 12px; color: #fff; font-weight: 300; }
+
+/* com_tit_wrap */
+.com_tit_wrap span{display: block; font-size: 15px; color: #bdbfc6; font-family: 'Constantia'; font-weight: 400;}
+.com_tit_wrap h3{ position: relative; font-size: 25px; color: #131313; font-family: 'Noto Serif KR', serif; font-weight:600;}
+.com_tit_wrap h3 em{position: relative; padding-right: 16px; z-index: 2; background-color: #f9f9f4;}
+.com_tit_wrap h3::after{content: ''; position: absolute; top:19px; left:0; right:0; height: 1px; background-color: #cdcdcd;}
+.com_tit_wrap.st h3{ color: #fff;}
+.com_tit_wrap.st h3::after{background-color: #949494;}
+.com_tit_wrap.st h3 + p{margin: 30px 0 50px; font-size: 14px; color: #fff; font-weight: 200; line-height: 22px; letter-spacing: -1px;}
+.com_tit_wrap02{margin-bottom: 60px;}
+.com_tit_wrap02 span{display: block; font-size: 15px; color: #fff; font-family: 'Constantia';}
+.com_tit_wrap02 h4{font-size: 21px; font-family: 'Noto Serif KR', serif; font-weight: 600; color: #fff; letter-spacing: -1px;}
+.com_tit_wrap02 h4 + p{margin: 30px 0 50px; font-size: 14px; color: #fff; font-weight: 200; line-height: 22px;}
+
+@media (max-width: 360px){
+
+    .com_tit_wrap02 h4 + p br,
+    .com_tit_wrap.st h3 + p br{display: none;}
+
+}
+
+/* text_wrap */
+.text_wrap{margin-bottom: 50px;}
+.text_wrap .tit_text span{padding-left: 10px; font-size: 10px; color: #787878; font-weight: 400;}
+.text_wrap .tit_text{margin-bottom: 16px; font-size: 21px; font-family: 'Noto Serif KR', serif; font-weight:600; color: #131313; letter-spacing: -1px; word-break: keep-all;} 
+.text_wrap .text{color: #494949; font-weight: 300; letter-spacing: -1px;}
+.text_wrap.st{margin-bottom: 0;}
+.text_wrap.st .tit_text{margin-bottom: 25px;}
+
+.img_wrap img{display: block; width: 100%;}
+
+/* section1 */
+#section1{padding: 55px 0 62px;}
+#section1 .tit_wrap{margin-bottom: 25px;}
+#section1 .tit_wrap h3{margin-bottom: 5px; font-size: 35px; color:#ecedf1; font-family: 'Constantia'; font-weight: 400; line-height: 1.2;}
+#section1 .tit_wrap p{font-size: 25px; color:#131313; font-family: 'Noto Serif KR', serif; letter-spacing: -2px; font-weight: 600;}
+#section1 .img_wrap{box-shadow: 6px 23px 26px rgba(0,0,0,.2); border-radius: 7px; overflow: hidden;} 
+
+/* section2 */
+#section2{padding: 19px 0 73px;}
+
+/* section3 */
+#section3{padding: 50px 0 83px; background-color: #f9f9f4;}
+#section3 .com_tit_wrap{margin-bottom: 36px;}
+.slide_wrap01{margin-bottom: 66px;}
+.slide_wrap01 .slide_box li .img_wrap{margin-bottom: 30px; border-radius: 7px; overflow: hidden; box-shadow: 6px 35px 32px rgba(0,0,0,13%);}
+.slide_wrap01 .slide_box li .text_wrap h4{margin-bottom: 16px; font-size: 21px; font-family: 'Noto Serif KR', serif; font-weight: 600; color: #131313; letter-spacing: -1px;}
+.slide_wrap01 .slide_box li .text_wrap p{color: #494949; letter-spacing: -1px; line-height: 1.6; font-weight: 300;}
+.slide_wrap01 .slide_box li .text_wrap p br{display: none;}
+
+/* section4 */
+#section4{position: relative; padding: 73px 0 89px; background-color: #40466a;}
+#section4 .text_img{position: absolute; left:0; bottom: 359px;}
+#section4 .com_tit_wrap{margin-bottom: 20px;}
+.slide_wrap02 .slide_box li .img_wrap{margin-bottom: 30px; border-radius: 7px; overflow: hidden;}
+.slide_wrap02 .slide_box li .img_wrap img{width: 90%; margin: 0 auto;}
+.slide_wrap02 .slide_box li .text_wrap h4{margin-bottom: 16px; font-size: 21px; font-family: 'Noto Serif KR', serif; font-weight: 600; color: #fff; letter-spacing: -1px; text-align: center;}
+.slide_wrap02 .slide_box li .text_wrap p{color: #c4c4c4; letter-spacing: -1px; line-height: 1.6; font-weight: 300;}
+.slide_wrap02 .slide_box li .text_wrap p br{display: none;}
+
+/* section5 */
+#section5{position: relative; padding: 60px 0 113px; background: url(../images/sub/bloodvessel/sub1/bg.png)no-repeat center top; background-size: cover!important;}
+#section5 .com_tit_wrap02 h4{font-size: 27px;}
+#section5 .text_img{position: absolute; bottom: 1051px;}
+#section5 .box{margin-bottom: 79px;}
+#section5 .box:last-child{margin-bottom: 0;}
+#section5 .tab{display: flex; gap: 0 6px; justify-content: center;} 
+#section5 .tab li a{display: block; width: 80px; height: 42px; line-height: 40px; border-radius: 50px; background-color: #fff; font-size: 11px; text-align: center;}
+#section5 .tab li a.active{background-color: #40466a; color: #fff;}
+#section5 .tit02{margin: 35px 0;}
+#section5 .tit02 h5{margin-bottom: 20px; font-family: 'Noto Serif KR', serif; font-weight: 600; font-size: 21px; color: #fff; text-align: center;}
+#section5 .tit02 p{color: #fff; font-weight: 300; letter-spacing: -1px;}
+.slide_wrap03 .slide_box li .img_wrap{margin-bottom: 30px; border-radius: 7px; overflow: hidden; box-shadow: 6px 35px 32px rgba(0,0,0,13%);}
+
+@media (max-width: 360px){
+
+    #section5 .tit02 p br{display: none;}
+
+}
+
+/* section6 */
+#section6{position: relative;} 
+#section6 .com_tit_wrap02{position: absolute; width: 100%; top:65px; z-index: 9;}
+#section6 .com_tit_wrap02 h4{position: relative;}
+#section6 .com_tit_wrap02 h4::after{content: ''; position: absolute; top:46%; left:297px; right:0;height: 1px; background-color: #949494;}
+#section6 .slide_wrap04 .text_wrap{position: absolute; bottom:70px; left:20px; right:20px; margin-bottom: 0;}
+#section6 .slide_wrap04 .text_wrap h5{position: relative; margin-bottom: 22px; font-family: 'Noto Serif KR', serif; font-weight: 600; font-size: 25px; color: #fff;}
+#section6 .slide_wrap04 .text_wrap p{color: #fff; font-weight: 300; letter-spacing: -1px; line-height: 1.6;}
+#section6 .slide_wrap04 .text_wrap p br{display: none;}
+#section6 .slick-dots{display: flex; gap: 0 13px; position: absolute; top:152px; left:20px; }
+#section6 .slick-dots li{position: relative; }
+#section6 .slick-dots li::after{content: ''; position: absolute; right:-8px; bottom: 0; width: 1px; height: 8px; background-color: #d3dad9;}
+#section6 .slick-dots button{display: block; padding: 0; font-size: 13px; color: #d3dbda; line-height: 1;}
+#section6 .slick-dots li:last-child:after{display: none;}
+#section6 .slick-dots .slick-active button{color: #fff;}
+
+@media (max-width: 360px){
+
+    #section6 .slide_wrap04 .text_wrap p br{display: none;}
+
+}
+
+/* 센터_공통 */
+#section3.st{ background-color: #fff;}
+.com_tit_wrap h3 em.st{background-color: #fff;}
+#section2.st,
+#section2.st em{background-color: #f9f9f4;}
+#section4 em.st{background-color: #40466a;}
+
+/* 혈관센터_골반울혈증후군 */
+.bloodvessel_wrap2 #section4 .text_img{bottom: 581px;}
+.bloodvessel_wrap2 #section5{padding: 60px 0 94px;}
+.bloodvessel_wrap2 #section5 .text_img{bottom: 49px;}
+
+/* 혈관센터_심부정맥혈전증 */
+.bloodvessel_wrap3 #section4 .text_img{bottom: 538px;}
+.bloodvessel_wrap3 #section5{padding: 60px 0 131px;}
+.bloodvessel_wrap3 #section5 .text_img{bottom: 82px;}
+
+/* 혈관센터_투석혈관조성술 */
+.bloodvessel_wrap4 .text_wrap .tit_text{margin-bottom: 23px;}
+.bloodvessel_wrap4 #section2{padding: 58px 0 30px;}
+.bloodvessel_wrap4 #section3{padding: 50px 0 0;}
+.bloodvessel_wrap4 #section4 .text_img{bottom: 589px;}
+.bloodvessel_wrap4 #section5{padding: 60px 0 131px;}
+.bloodvessel_wrap4 #section5 .text_img{bottom: 82px;}
+
+/* 혈관센터_투석혈관재개통술 */
+.bloodvessel_wrap5 #section3{padding: 50px 0 0;}
+.bloodvessel_wrap5 #section5{padding: 60px 0 130px;}
+.bloodvessel_wrap5 #section5 .text_img{bottom: 83px;}
+
+/* 혈관센터_투석혈관교정술 */
+.bloodvessel_wrap6 .com_tit_wrap02 h4 + p{letter-spacing: -1px;}
+.bloodvessel_wrap6 #section2{padding: 19px 0 40px;}
+.bloodvessel_wrap6 .com_tit_wrap{margin-bottom: 30px;}
+.bloodvessel_wrap6 .text_wrap{margin: 15px 0 35px;}
+.bloodvessel_wrap6 .text_wrap .tit_text{margin-bottom: 24px;}
+.bloodvessel_wrap6 #section2 .text_wrap.st2 .img_wrap{margin-bottom: 50px; box-shadow: 6px 23px 26px rgba(0,0,0,.2); border-radius: 7px; overflow: hidden;}
+.bloodvessel_wrap6 #section5{padding: 60px 0 136px;}
+.bloodvessel_wrap6 #section5 .text_img{bottom: 89px;}
+
+/* 혈관센터_당뇨발 */
+.bloodvessel_wrap7 .slide_wrap01{margin-bottom: 46px;}
+.bloodvessel_wrap7 #section4{padding: 73px 0 122px;}
+.bloodvessel_wrap7 #section4 .text_img{bottom: 520px;}
+.bloodvessel_wrap7 #section5{padding: 60px 0 130px;}
+.bloodvessel_wrap7 #section5 .text_img{bottom: 84px;}
+
+/* 혈관센터_버거병 */
+.bloodvessel_wrap8 #section2 .com_tit_wrap{margin-bottom: 40px;}
+.bloodvessel_wrap8 #section2.text_wrap .tit_text{margin-bottom: 20px;}
+.bloodvessel_wrap8 #section2 .img_wrap.st{border-radius: 7px; overflow: hidden;box-shadow: 6px 35px 32px rgba(0,0,0,13%);}
+.bloodvessel_wrap8 #section2 .text_wrap .text{margin-bottom: 50px;}
+.bloodvessel_wrap8 #section2 .text_wrap.st .tit_text{margin-bottom: 36px;}
+.bloodvessel_wrap8 #section3 .img_wrap{border-radius: 0; box-shadow: none;}
+.bloodvessel_wrap8 #section3 .img_wrap.st{margin-right: -20px;}
+.bloodvessel_wrap8 .slide_wrap01 .slide_box li .text_wrap h4{margin-bottom: 20px;}
+.bloodvessel_wrap8 #section4 .com_tit_wrap{margin-bottom: 54px;}
+.bloodvessel_wrap8 #section4{padding: 73px 0 105px;}
+.bloodvessel_wrap8 #section4 .text_img{bottom: 464px;}
+.bloodvessel_wrap8 #section5{padding: 60px 0 130px;}
+.bloodvessel_wrap8 #section5 .text_img{bottom: 88px;}
+
+/* 혈관센터_다리동맥폐쇄증 */
+.bloodvessel_wrap9 .text_wrap .tit_text{letter-spacing: -2px;}
+.bloodvessel_wrap9 .slide_wrap01 .slide_box li .img_wrap{margin-bottom: 48px;}
+.bloodvessel_wrap9 .slide_wrap01 .slide_box li .text_wrap h4{margin-bottom: 28px;}
+.bloodvessel_wrap9 .slide_wrap01{margin-bottom: 40px;}
+.bloodvessel_wrap9 #section4 .com_tit_wrap{margin-bottom: 54px;}
+.bloodvessel_wrap9 #section4 .text_img{bottom: 464px;}
+.bloodvessel_wrap9 #section5{padding: 60px 0 130px;}
+.bloodvessel_wrap9 #section5 .text_img{bottom: 88px;}
+
+/* 혈관센터_레이노증후군 */
+.bloodvessel_wrap10 #section2{padding: 19px 0 0;}
+.bloodvessel_wrap10 #section2 .text_wrap img{width: 100%;}
+.bloodvessel_wrap10 #section2 .text_wrap .text{margin-bottom:30px;}
+.bloodvessel_wrap10 #section4 .com_tit_wrap{margin-bottom: 54px;}
+.bloodvessel_wrap10 #section4 .text_img{bottom: 464px;}
+.bloodvessel_wrap10 #section5{padding: 60px 0 130px;}
+.bloodvessel_wrap10 #section5 .text_img{bottom: 88px;}
+
+/* 혈관센터_중심정맥관삽입술 */
+.bloodvessel_wrap11 #section2{padding: 19px 0 40px;}
+.bloodvessel_wrap11 #section2 .img_wrap{margin-bottom: 30px;}
+.bloodvessel_wrap11 #section2 .text_wrap .tit_text{margin-bottom: 22px;}
+.bloodvessel_wrap11 #section5{padding: 60px 0 130px;}
+.bloodvessel_wrap11 #section5 .text_img{bottom: 88px;}
+
+/* 혈관센터_경피적카테터배액술 */
+.bloodvessel_wrap12 .com_tit_wrap h3{letter-spacing: -1px;}
+.bloodvessel_wrap12 #section5{padding: 60px 0 130px;}
+.bloodvessel_wrap12 #section5 .text_img{bottom: 88px;}
+
+/* 혈관센터_경피적내시경하위루술 */
+.bloodvessel_wrap13 #section1 .tit_wrap h3{letter-spacing: -2px;}
+.bloodvessel_wrap13 .com_tit_wrap h3{letter-spacing: -1px;}
+.bloodvessel_wrap13 #section2 .text_wrap{margin-top: 25px;}
+
+/* 병원소개_공통 */
+.introduce_wrap .tit{margin-bottom: 36px; position: relative; padding-top: 102px;}
+.introduce_wrap .tit::after{content: ''; position: absolute; left: 50%; top:0; width: 1px; height: 102px; background-color: #727272;}
+.introduce_wrap .tit h3{padding-top: 13px; font-size: 15px; color: #131313; font-family: 'Noto Serif KR', serif; font-weight: 600; text-align: center;}
+.introduce_wrap .tit.st {margin-bottom: 45px;}
+.introduce_wrap .tit.st h3{font-size: 22px; letter-spacing: -2px;}
+.introduce_wrap .tab{display: flex; justify-content: center; align-items: center; gap: 0 20px; line-height: 1;}
+.introduce_wrap .tab li{position: relative;}
+.introduce_wrap .tab li::before{content: ''; position: absolute; top:-1px; right:-11px; width: 1px; height: 17px; background-color: #e0e0e0;}
+.introduce_wrap .tab li:last-child:before{display: none;}
+.introduce_wrap .tab li a{display: block; font-family: 'Noto Serif KR', serif; font-weight: 600; color: #131313; font-size: 15px; color: #bfbfbf;}
+.introduce_wrap .tab li a.active{color: #131313;}
+
+/* 병원소개_인사말 */
+.introduce_wrap1 #greeting_box1{position: relative; padding: 0 0 258px;}
+.introduce_wrap1 #greeting_box1 .tit_text{margin-bottom: 45px; text-align: center; font-size: 25px; color: #131313; font-family: 'Noto Serif KR', serif; font-weight: 600; letter-spacing: -1px;}
+.introduce_wrap1 #greeting_box1 .tit_text em{color:#a38964;}
+.introduce_wrap1 #greeting_box1 .img_wrap{margin-bottom: 60px; border-radius: 7px; overflow: hidden; box-shadow: 6px 23px 26px rgba(0,0,0,.2); }
+.introduce_wrap1 #greeting_box1 .text_box .tit_text02{margin-bottom: 18px; text-align: center; font-family: 'Noto Serif KR', serif; font-weight: 600; color:#a38964; font-size: 21px;}
+.introduce_wrap1 #greeting_box1 .text_box .text{margin-bottom: 46px; text-align: center; font-size: 13px; color: #636363; line-height: 1.6; font-weight: 300;}
+.introduce_wrap1 #greeting_box1 .text_box .tit_text03{margin-bottom: 55px; font-size: 21px; font-family: 'Noto Serif KR', serif; font-weight: 600; color: #131313; text-align: center; letter-spacing: -1px;}
+.introduce_wrap1 #greeting_box1 .text_box .tit_text03 em{color:#a38964;}
+.introduce_wrap1 #greeting_box1 .text_box .img_wrap{width: 90%; margin: 0 auto 60px; border-radius: 50%;}
+.introduce_wrap1 #greeting_box1 .text_box .img_wrap img{width: 100%;}
+.introduce_wrap1 #greeting_box1 .text_box .text02{font-size: 13px; color: #636363; text-align: center; line-height: 1.6; font-weight: 300;}
+.introduce_wrap1 #greeting_box1 .text_img{position: absolute; bottom: 83px;}
+.introduce_wrap1 #greeting_box1 .text_img + .img_wrap{margin: 0; position: absolute; bottom: 0; right:46px; width: 131px;}
+.introduce_wrap1 #greeting_box2{padding: 52px 0 65px;}
+.introduce_wrap1 #greeting_box2 .tit_text{margin-bottom: 50px; text-align: center; font-size: 25px; color: #a38964; font-family: 'Noto Serif KR', serif; font-weight: 600; letter-spacing: -1px;}
+.introduce_wrap1 #greeting_box2 .img_wrap{margin-bottom: 50px; border-radius: 7px; overflow: hidden; box-shadow: 6px 23px 26px rgba(0,0,0,.2); }
+.introduce_wrap1 #greeting_box2 .tit_text02{margin-bottom: 20px; font-size: 25px; font-family: 'Noto Serif KR', serif; font-weight: 600; color: #131313; letter-spacing: -2px; text-align: center; word-break: keep-all;}
+.introduce_wrap1 #greeting_box2 .tit_text02 em{color:#a38964;}
+.introduce_wrap1 #greeting_box2 .tit_text02 + p{font-size: 16px; font-family: 'Noto Serif KR', serif; font-weight: 600; color: #131313; text-align: center; line-height: 29px; letter-spacing: -1px;}
+.introduce_wrap1 #greeting_box3{padding: 68px 0 110px;}
+.introduce_wrap1 #greeting_box3{background: url(../images/sub/introduce/sub1/bg.jpg)no-repeat center top; background-size: cover;}
+.introduce_wrap1 #greeting_box3 .tit02 h3{margin-bottom: 20px; font-size: 27px; font-family: 'Constantia'; color: #453e34; font-weight: 400; text-align: center;}
+.introduce_wrap1 #greeting_box3 .tit02 h3 em{color: #a38964;}
+.introduce_wrap1 #greeting_box3 .tit02 p{margin-bottom: 38px; font-weight: 500; color: #fff; font-size: 13px; line-height: 21px;
+text-align: center; font-weight: 300;}
+.introduce_wrap1 #greeting_box3 .box{margin-bottom: 40px;}
+.introduce_wrap1 #greeting_box3 .box:last-child{margin-bottom: 0;}
+.introduce_wrap1 #greeting_box3 .box .img_wrap{width: 39.2%; margin: 0 auto 20px; border-radius: 7px; overflow: hidden; box-shadow: 6px 35px 32px rgba(0,0,0,13%);}
+.introduce_wrap1 #greeting_box3 .box .tit03 h4{text-align: center; font-size: 0; letter-spacing: -1px;}
+.introduce_wrap1 #greeting_box3 .box .tit03 h4 span{display: inline-block; font-size: 50px; font-family: 'Constantia'; color: #a38964; font-weight: 400; line-height: 1;}
+.introduce_wrap1 #greeting_box3 .box .tit03 h4 em{display: inline-block; font-size: 17px; font-family: 'Constantia'; color: #a38964; font-weight: 400;}
+.introduce_wrap1 #greeting_box3 .box .tit03 h4 strong{display: block; margin: 7px 0 9px; font-family: 'Noto Serif KR', serif; font-weight: 600; font-size: 20px; color: #fff; text-align: center;}
+.introduce_wrap1 #greeting_box3 .box .tit03 p{text-align: center; font-weight: 300; color: #fff; font-size: 13px; letter-spacing: -1px; line-height: 22px;}
+
+/* 병원소개_의료진소개 */
+.introduce_wrap2 section{margin-bottom: 30px;}
+.introduce_wrap2 section:nth-last-of-type(1){margin-bottom: 0;}
+.introduce_wrap2{position: relative; padding-bottom: 196px; margin: -100px 0 0;}
+.introduce_wrap2 .tab{margin-bottom: 46px;}
+.introduce_wrap2 section img{display: block; width: 100%;}
+.introduce_wrap2 .text_img{position: absolute; bottom: 0;}
+
+/* 병원소개_진단치료장비 */
+.introduce_wrap3 .tab{margin-bottom: 50px;}
+.introduce_wrap3 .tit.st h3{letter-spacing: -3px;}
+.introduce_wrap3 .equipment_sub_wrap{margin-bottom: 19px; position: relative;}
+.introduce_wrap3 .equipment_sub_wrap .control{position: absolute; right:0; top: 50%; transform: translateY(-50%);}
+.introduce_wrap3 .equipment_sub_wrap .control button{margin-bottom: 5px; display: block; width: 78px; height: 78px; background: url(../images/sub/equipment/prev.png)no-repeat; transition: all .3s;}
+.introduce_wrap3 .equipment_sub_wrap .control button:hover{background: url(../images/sub/equipment/btn_hover.png);}
+.introduce_wrap3 .equipment_sub_wrap .control button.next{margin-bottom: 0; transform: rotate(180deg);}
+.introduce_wrap3 .equipment_sub_wrap .control button.next:hover{background: url(../images/sub/equipment/btn_hover.png); transform:rotate(180deg);}
+.introduce_wrap3 .equipment_sub_img{}
+.introduce_wrap3 .equipment_sub_img .slick-list{padding: 0!important;}
+.introduce_wrap3 .equipment_sub_img li{width: 85px; margin-right: 5px;}
+.introduce_wrap3 .equipment_sub_img li a{display: block; width: 85px; height: 85px; border: 1px solid #dcdadd;}
+.introduce_wrap3 .equipment_sub_img li.slick-current a{border: 3px solid #a68d69;}
+.introduce_wrap3 .equipment_sub_img li a img{display: block; width: 100%;}
+.introduce_wrap3 .com_tab{margin-bottom: 87px;}
+.introduce_wrap3 .com_tit .tit{margin-bottom: 66px;}
+.introduce_wrap3 .equipment_main_img li{}
+.introduce_wrap3 .equipment_main_img li .img_box{position: relative; height: 0; padding-top: 77.9%; border: 1px solid #e5e4e6;}
+.introduce_wrap3 .equipment_main_img li .img_box img{display: block; position: absolute; top:0; left:0; right:0; bottom: 0; width: 100%; height: 100%; }
+.introduce_wrap3 .equipment_main_img li .text_box{padding: 22px 10px 0 0;}
+.introduce_wrap3 .equipment_main_img li .text_box span{display: block; margin-bottom: 6px; font-size: 13px; color: #a38964; font-weight: 500; font-family: 'Noto Serif KR', serif;}
+.introduce_wrap3 .equipment_main_img li .text_box h3{margin-bottom: 20px; font-weight: 600; font-size: 21px; color: #131313; font-family: 'Noto Serif KR', serif; word-break: keep-all;}
+.introduce_wrap3 .equipment_main_img li .text_box p{margin-bottom: 25px; font-size: 12px; color: #636363; font-weight: 300; line-height: 20px; }
+
+/* 병원소개_진단치료장비 */
+.introduce_wrap5{margin-top: -30px;}
+.introduce_wrap5 img{display: block; width: 100%;}
+#map_box1 .com_tab01{margin-bottom: 34px;}
+#map_box1 .com_tab01 li a{width: 119px;}
+#map_box2{padding: 32px 0 0;}
+#map_box2 .map_link{padding: 0 38px; display: flex; gap:0 35px; justify-content: center;}
+#map_box3{padding: 32px 0 0;}
+#map_box3 .com_tab01{margin-bottom: 33px;}
+#map_box3 .com_tab01 li{flex: 1;}
+#map_box3 .com_tab01 li a{letter-spacing: -1px;}
+
+@media (max-width: 360px){
+
+    #map_box3 .com_tab01{flex-wrap: wrap; gap: 6px;}
+    #map_box3 .com_tab01 li{flex: none; width: 103px;}
+
+}
+
+/* 병원소개_병원둘러보기 */
+.introduce_wrap4 {margin: -100px 0 0;}
+.introduce_wrap4 .tit.st h3{letter-spacing: -3px;}
+.introduce_wrap4 .hospital_wrap .hospital_box{margin: 0 -20px;}
+.introduce_wrap4 .hospital_wrap .com_tit{margin-bottom: 130px;}
+.introduce_wrap4 .hospital_wrap .hospital_sub_img{display: flex; margin-bottom: 17px;}
+.introduce_wrap4 .hospital_wrap .hospital_sub_img li{width: 85px; margin-right: 6px;}
+.introduce_wrap4 .hospital_wrap .hospital_sub_img li a{display: block; height: 60px; border: 1px solid #dddbde;}
+.introduce_wrap4 .hospital_wrap .hospital_sub_img li.slick-current a{border: 3px solid #a38964;}
+.introduce_wrap4 .hospital_wrap .hospital_sub_img li a img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.introduce_wrap4 .hospital_wrap .hospital_main_img li{}
+.introduce_wrap4 .hospital_wrap .hospital_main_img li a{display: block; position: relative; height: 0; padding-top: 65%; border: 1px solid #e8e7e9;}
+.introduce_wrap4 .hospital_wrap .hospital_main_img li a img{display: block; position: absolute; top:0; right:0; bottom: 0; left:0; width: 100%; height: 100%; object-fit: cover;}
+
+/* 예약상담_제증명발급안내 */
+.reservation_wrap3{margin: -40px 0 0;}
+.reservation_wrap3 .com_tab01{margin-bottom: 40px;}
+.reservation_wrap3 .com_tab01 li{width: 164px;}
+.reservation_wrap3 .com_tab01 li a{letter-spacing: -1px;}
+.reservation_wrap3 h3{margin-bottom: 20px; font-size: 21px; color: #131313; font-family: 'Noto Serif KR', serif; font-weight: 500; text-align: center; letter-spacing: -1px;}
+.reservation_wrap3 h3 + p{margin-bottom: 30px; font-size: 11px; color: #636363; text-align: center; line-height: 20px; letter-spacing: -1px; font-weight: 300;}
+.reservation_wrap3 .issued_download{display: flex; gap: 0 26px; justify-content: center;}
+.reservation_wrap3 .issued_download a{position: relative; padding-top: 81px; display: block; line-height: 1; text-align: center; font-size: 12px; color: #000; font-weight: 500; font-family: 'Noto Serif KR', serif; letter-spacing: -1px;} 
+.reservation_wrap3 .issued_download a::after{content: ''; position: absolute; left: 50%; transform: translateX(-50%); top:0; padding: 70px 76px 0 0; background-repeat: no-repeat; background-size: auto 100%;} 
+.reservation_wrap3 .issued_download a em{color: #a38964;}
+.reservation_wrap3 .issued_download a.download_1::after{background-image: url(../images/sub/reservation/sub3/download_1.jpg);}
+.reservation_wrap3 .issued_download a.download_2::after{background-image: url(../images/sub/reservation/sub3/download_2.jpg);}
+.reservation_wrap3 .issued_box1{margin-bottom: 55px; padding-bottom: 72px; border-bottom: 1px solid #222;}
+.reservation_wrap3 .issued_box{margin-bottom: 28px; padding-bottom: 50px; border-bottom: 1px solid #222;}
+.reservation_wrap3 .issued_box img{display: block; width: 100%; margin: 0 auto 30px;}
+.reservation_wrap3 .text_list .color{color: #ff4242;}
+.reservation_wrap3 .text_list > li .box{display: flex; gap: 0 5px; align-items: baseline; font-size: 10px;}
+.reservation_wrap3 .text_list > li{position: relative; font-weight: 500; color: #636363; line-height: 20px; letter-spacing: -1px;}
+.reservation_wrap3 .text_list > li em{flex-shrink: 0; display: inline-block; width: 11px; height: 11px; line-height: 11px; color: #fff; font-family: 'Noto Serif KR', serif; font-size: 6px; background-color: #a38964; text-align: center; border-radius: 50px;}
+.reservation_wrap3 .issued_box2{padding-bottom: 8px; margin-bottom: 40px;}
+.reservation_wrap3 .text_list2{margin-left: 22px; font-size: 10px;}
+.reservation_wrap3 .issued_box3{margin-bottom: 0; padding-bottom: 0; border-bottom: 0;}
+.reservation_wrap3 .issued_box3 .top{ text-align: center;}
+.reservation_wrap3 .issued_box3 h3{margin-bottom: 30px;}
+.reservation_wrap3 .issued_box3 .top_text{display: inline-block; margin-bottom: 67px; padding: 0 8px 6px; font-size: 15px; color: #131313; font-weight: 700; line-height: 1; border-bottom: 4px solid #d8cdbd;} 
+
+@media (max-width: 360px){
+
+    .reservation_wrap3 .com_tab01{flex-wrap: wrap; gap: 6px 0;}
+
+}
+
+/* 외과센터_공통 */
+.surgery_wrap .text_wrap.st .tit_text span{margin-top: 5px; padding: 0; display: block; font-family: 'Noto Serif KR', serif; font-size: 10px; font-weight: 600; color:#131313;}
+.surgery_wrap #section1 img{display: block; width: 100%;}
+.surgery_wrap #section1{padding: 55px 0 0;}
+.surgery_wrap #section2{padding: 19px 0 0;}
+.surgery_wrap #section2 .img_wrap{margin-bottom: 40px;}
+.surgery_wrap #section2 .text_wrap .tit_text{margin-bottom: 28px;}
+.surgery_wrap #section3,
+.surgery_wrap #section3 .com_tit_wrap h3 em{background-color: #f4f8f9;}
+.surgery_wrap #section4,
+.surgery_wrap #section4 em.st{background-color: #6d564d;}
+.surgery_wrap #section4 .text_img{bottom: 572px;}
+.surgery_wrap #section5 .text_img{bottom: 52px;}
+.surgery_wrap #section5{background: url(../images/sub/surgery/sub1/bg.png)no-repeat center top;}
+
+/* 외과센터_갑상선 */
+.surgery_wrap1 #section3 .slide_wrap01{margin-bottom: 0;}
+
+/* 외과센터_유방 */
+.surgery_wrap2 #section4 .text_img{bottom: 593px;}
+.surgery_wrap2 .text_wrap.st .tit_text{margin-bottom: 39px;}
+.surgery_wrap2 .com_tit_wrap.st h3 + p span{color: #ffe400;}
+
+/* 외과센터_담낭 */
+.surgery_wrap3 .slide_wrap01{margin-bottom: 0;}
+.surgery_wrap3 #section4 .com_tit_wrap{margin-bottom: 50px;}
+.surgery_wrap3 #section4 .text_img{bottom: 660px;}
+
+/* 외과센터_맹장 */
+.surgery_wrap4 .text_wrap.st .tit_text{margin-bottom: 14px;}
+.surgery_wrap4 .slide_wrap01{margin-bottom: 0;}
+.surgery_wrap4 #section4{padding: 73px 0 50px;}
+.surgery_wrap4 #section4 .text_img{bottom: 437px;}
+
+/* 외과센터_치질 */
+.surgery_wrap5 #section4 .com_tit_wrap{margin-bottom: 50px;}
+.surgery_wrap5 .slide_wrap01{margin-bottom: 0;}
+.surgery_wrap5 #section4 .text_img{bottom: 524px;}
+
+/* 외과센터_비만 */
+.surgery_wrap6 #section2{padding: 19px 0 55px;}
+.surgery_wrap6 #section2 .com_tit_wrap{margin-bottom: 35px;}
+.surgery_wrap6 #section2 .text_wrap{margin-bottom: 22px;}
+.surgery_wrap6 #section2 .text_wrap .tit_text{margin-bottom: 20px;}
+.surgery_wrap6 #section2 .img_wrap{margin-bottom: 49px;}
+
+/* 척추관절센터_공통 */
+#wrap.st2 #section1{position: relative; ;}
+#wrap.st2 #section1::after{content: ''; position: absolute; left: 20px; right:20px; bottom: 0; border-bottom: 1px solid #222}
+#wrap.st2 #section1{margin-bottom: 38px;}
+#wrap.st2 #section1 .tit_wrap p{margin-bottom: 25px;}
+#wrap.st2 #section1 .tit_wrap .sub_text{font-size: 14px; color:#636363 ; font-weight: 300;}
+#wrap.st2 .tab{ margin-bottom: 40px; display: flex; flex-wrap: wrap; gap:5px;}
+#wrap.st2 .tab li a{display: flex; width: 107px; height: 35px; align-items: center; justify-content: center;color: #131313; font-size: 12px; border-radius: 50px; border: 1px solid #e7e8eb; word-break: keep-all; text-align: center; letter-spacing: -1px; line-height: 15px;}
+#wrap.st2 .tab li a.active{background: #000; color: #fff}
+#wrap.st2 .box1{padding-top: 0!important;}
+#wrap.st2 .box{position: relative; padding:80px 0 78px; }
+#wrap.st2 .box::after{content: ''; position: absolute; left:20px; right:20px; bottom: 0; border-bottom: 1px solid #222;}
+#wrap.st2 .box:nth-last-of-type(1){border-bottom: 0;}
+#wrap.st2 .box:nth-last-of-type(1)::after{display: none;}
+#wrap.st2 .box img{display: block; width: 100%;}
+#wrap.st2 #section2{padding-bottom: 0;}
+
+/* 척추관절센터_비수술치료 */
+#wrap.st2 .joint_wrap7 #section2{padding-bottom: 25px;}
+#wrap.st2 .joint_wrap7 .box{padding: 39px 0 0;}
+#wrap.st2 .joint_wrap7 .box::after{display: none;}
+
+/* 척추관절센터_수술치료 */
+#wrap.st2 .joint_wrap8 #section2{padding-bottom: 50px;}
+#wrap.st2 .joint_wrap8 .box{padding: 39px 0 0;}
+#wrap.st2 .joint_wrap8 .box::after{display: none;}
+
+/* 내과센터_공통 */
+#wrap.st3 .tab{ margin-bottom: 40px; display: flex; flex-wrap: wrap; gap:5px;}
+#wrap.st3 .tab li a{display: flex; width: 107px; height: 35px; align-items: center; justify-content: center;color: #131313; font-size: 12px; border-radius: 50px; border: 1px solid #e7e8eb; word-break: keep-all; text-align: center; letter-spacing: -1px; line-height: 15px;}
+#wrap.st3 .tab li a.active{background: #000; color: #fff}
+#wrap.st3 #section1{padding-bottom: 0; background-color: #fbf9f2;}
+#wrap.st3 #section1 .tit_wrap h3{margin-bottom: 15px; text-align: center; font-size: 35px; font-family: 'Constantia'; color: #e9e6d9;}
+#wrap.st3 #section1 .tit_wrap p{margin-bottom: 20px; text-align: center;}
+#wrap.st3 #section1 .tit_wrap p.sub_text{font-size: 14px; color: #636363;}
+#wrap.st3 #section1 .img_wrap{border: 0; box-shadow: none;}
+#wrap.st3 #section2{padding: 50px 0 73px;}
+#wrap.st3 .box{margin-bottom: 43px;}
+#wrap.st3 .box:nth-last-of-type(1){margin-bottom: 0;}
+#wrap.st3 #section2 img{display: block; width: 100%;}
+
+/* 내과센터_내분비질환 */
+#wrap.st3 .medicine_wrap2 #section1{padding-bottom: 45px;}
+
+/* 내과센터_간담도질환 */
+#wrap.st3 .medicine_wrap3 #section4 em.st,
+#wrap.st3 .medicine_wrap3 #section4{background-color: #40626a;}
+#wrap.st3 .medicine_wrap3 .tab{justify-content: center;}
+#wrap.st3 .medicine_wrap3 #section1{padding-bottom: 27px;}
+#wrap.st3 #section4 .text_img{bottom: 267px;}
+
+/* 내과센터_건강검진 */
+#wrap.st3 .medicine_wrap4 #section1{padding-bottom: 45px;}
+
+/* 내과센터_예방접종 */
+#wrap.st3 .medicine_wrap5 #section1{padding-bottom: 40px;}
+
+/* 내과센터_영양수액 */
+#wrap.st3 .medicine_wrap6 #section1{padding-bottom: 65px;}
+#wrap.st3 .medicine_wrap6 .top{margin-bottom: 50px;}
+
+/* 병원소개_오시는 길 */
+.map_content_wrap{margin-bottom:35px ;}
+.map_content_wrap .box{}
+.map_content_wrap2 .box .top{margin-bottom: 50px;}
+.map_content_wrap2 .box .top h4{margin-bottom: 20px; text-align: center; font-size: 20px; color: #a38964; font-family: 'Noto Serif KR', serif; font-weight: 500;}
+.map_content_wrap2 .box .top p{font-size: 14px; text-align: center; color: #636363; line-height: 24px; font-weight: 300; letter-spacing: -1px;}
+.map_content_wrap2 .map{margin-bottom: 60px;}
+.map_content_wrap2 .map img{display: block; margin: 0 auto 25px;}
+.map_content_wrap2 .map h5{margin-bottom: 10px; text-align: center; font-size: 15px; font-family: 'Noto Serif KR', serif; font-weight: 500; color: #000;}
+.map_content_wrap2 .map p{color: #636363; font-size: 12px; text-align: center; font-weight: 300;}
+.map_content_wrap2 ul li{margin-bottom: 7px; display: flex; gap: 0 7px; align-items: baseline;}
+.map_content_wrap2 ul li span{flex-shrink: 0; margin: 0; display: block; width: 16px; height: 16px; line-height: 14px; border-radius: 50px; text-align: center; background-color: #000; color: #fff; font-weight: 300; font-size: 12px;}
+.map_content_wrap2 ul li p{margin-bottom: 0; font-size: 14px; color: #636363; font-weight: 500; text-align: left!important;}
+.map_content_wrap2 ul li p em{display: inline-block;  font-size: 12px; color: #636363; font-weight: 500;}
+.map_content_wrap2 ul li .color1{color: #2881ff;}
+.map_content_wrap2 ul li .color2{color: #4da020;}
+.map_view_box{position: relative;}
+.map_view_box .view{width: 40px; height: 40px; position: absolute; bottom: 10px; right: 20px; background: url(../images/common/view.png) no-repeat;}
+.map_address{padding-bottom: 28px; border-bottom: 1px solid #c1c1c1;}
+#map_address h4{margin-bottom: 12px; font-size: 25px; color: #a38964; font-family: 'Noto Serif KR', serif; font-weight: 500;}
+#map_address P{font-size: 15px; color: #636363;}
+#map_address a{display: block; width: 87px; height: 32px; line-height: 30px; text-align: center; color: #fff; background-color: #272727; border-radius: 5px; font-size: 12px;}
+#map_address span{margin-top: -7px; font-size: 30px; color: #000; font-family: 'Constantia'; font-weight: 400;}
+#map_address .layout_box{margin-top: 16px; display: flex; gap: 0 8px; align-items: center;}
+
+/* 피부성형센터_공통 */
+.skin_wrap #skin_wrap03.st{padding: 60px 0 0; background-color: #f4f8f9;}
+.skin_wrap #top{margin-bottom: 40px;}
+.skin_wrap #top img{display: block; width: 100%;}
+.skin_wrap .tit h3 span{display: block; font-family: 'Constantia'; font-size: 35px; color: #ecedf1; font-weight: 400; letter-spacing: -1px;}
+.skin_wrap .tit h3 em{font-size: 25px; color: #131313; font-family: 'Noto Serif KR', serif; font-weight: 500; letter-spacing: -1px;}
+.skin_wrap .tit.st{margin-bottom: 40px; overflow: hidden;}
+.skin_wrap .tit.st h3 span{display: block; font-family: 'Constantia'; font-size: 15px; color: #ecedf1; font-weight: 400;}
+.skin_wrap .tit.st h3 em{padding-right: 22px; position: relative; font-size: 25px; color: #131313; font-family: 'Noto Serif KR', serif; font-weight: 500; letter-spacing: -1px; background-color: #fff; z-index: 1
+    ;}
+.skin_wrap .tit.st h3 em::after{content: ''; position: absolute; top:19px; left: 0; right: -1000%; height: 1px; background-color: #949494; z-index: -1;}
+
+.skin_wrap .tit h4{margin-bottom: 20px; font-family: 'Noto Serif KR', serif; font-weight: 500; font-size: 26px; color: #131313; letter-spacing: -1px;}
+.skin_wrap .tit h4 + p{margin-bottom: 45px; font-size: 14px; color: #494949; line-height: 22px; font-weight: 300; letter-spacing: -1px;} 
+.skin_wrap .img_wrap img{display: block;}
+.skin_wrap #skin_wrap01 .img_wrap{margin: 35px 0 55px; box-shadow: 6px 35px 32px rgba(0,0,0,13%); border-radius: 50%;}
+.skin_wrap #skin_wrap02{position: relative; padding: 0 0 100px;}
+.skin_wrap #skin_wrap02 .img_wrap{position: relative; box-shadow: 6px 35px 32px rgba(0,0,0,13%); border-radius: 50%; overflow: hidden; z-index: 9;}
+.skin_wrap #skin_wrap02 .text_img{position: absolute; bottom: -7px;}
+
+.skin_wrap #skin_wrap03{padding: 15px 0 0;}
+
+.skin_wrap #skin_wrap03 .skin_list01{padding: 0 0 11px; position: relative;}
+.skin_wrap #skin_wrap03 .skin_list01.border::after{content: ''; position: absolute; left:-100%; right: -100%; bottom: 0; height: 1px; background-color: #969696;}
+.skin_wrap #skin_wrap03 .skin_list01 li{margin-bottom: 40px;}
+.skin_wrap #skin_wrap03 .skin_list01 li a{display: block;}
+.skin_wrap #skin_wrap03 .skin_list01 li .img_wrap{ max-width: 210px; margin: 0 auto 68px; position: relative; box-shadow: 6px 35px 32px rgba(0,0,0,13%);  }
+.skin_wrap #skin_wrap03 .skin_list01 li .img_wrap img{ display: block;}
+.skin_wrap #skin_wrap03 .skin_list01 li .img_wrap h4{height: 64px; line-height: 64px; position: absolute; left: 8px; right:8px;bottom: -45px; background-color: #fff; color:#131313; font-size: 18px; font-family: 'Noto Serif KR', serif; font-weight: 500; text-align: center; letter-spacing: -1px;}
+.skin_wrap #skin_wrap03 .skin_list01 li .text_box{margin-bottom: 20px;}
+.skin_wrap #skin_wrap03 .skin_list01 li .text_box p{font-size: 13px; color: #494949; font-weight: 300; text-align: center; line-height: 22px; letter-spacing: -1px;}
+.skin_wrap #skin_wrap03 .skin_list01 li .view{display: block; text-align: center; font-weight: 700; font-size: 11px; color: #131313; text-decoration: underline;}
+.skin_wrap #skin_wrap03 .tit h4{margin-bottom: 10px; padding: 50px 0 0; font-size: 20px; text-align: center;}
+
+.skin_wrap #skin_wrap04 .box{margin-bottom: 60px;}
+.skin_wrap #skin_wrap04 .box:last-child{margin-bottom: 0;}
+.skin_wrap #skin_wrap04{padding: 56px 0 70px; background-color: #f4f8f9;}
+.skin_wrap .tit.color h3 span{color: #bdbfc6;}
+.skin_wrap .tit.color h3 em{color: #131313; background-color: #f4f8f9;}
+.skin_wrap #skin_wrap04 .sub_text h4{margin-bottom: 15px; font-family: 'Noto Serif KR', serif; font-weight: 500; font-size: 18px; color: #131313;}
+.skin_wrap #skin_wrap04 .sub_text p{margin-bottom: 20px; font-size: 13px; color: #494949;font-weight: 300; letter-spacing: -1px; line-height: 22px;}
+.skin_wrap #skin_wrap04 .info_list{margin-bottom: 23px; display: flex; justify-content: center; align-items: center; gap: 0 6px;}
+.skin_wrap #skin_wrap04 .info_list li{width: 108px; height: 43px; line-height: 40px; border: 1px solid #e4e5ea; text-align: center; background-color: #fff; font-size: 11px; color: #131313; border-radius: 50px; font-weight: 500; letter-spacing: -1px;}
+.skin_wrap #skin_wrap04 .skin_list02 li:last-child{margin-bottom: 0;}
+.skin_wrap #skin_wrap04 .skin_list02 li{margin-bottom: 20px; padding: 6px; display: flex; align-items: center; gap: 0 17px; background-color: #fff; border: 1px solid #fcfdfd;}
+.skin_wrap #skin_wrap04 .skin_list02 li .img_wrap{flex-shrink: 0; width: 142px; height: 120px;}
+.skin_wrap #skin_wrap04 .skin_list02 li .img_wrap img{display: block; margin: 0 auto;}
+.skin_wrap #skin_wrap04 .skin_list02 li .text_box span{display: block; margin-bottom: 2px; font-family: 'Constantia'; font-size: 15px; color: #191919; font-weight: 700;}
+.skin_wrap #skin_wrap04 .skin_list02 li .text_box p{font-size: 12px; color: #505050; letter-spacing: -1px;}
+.skin_wrap #skin_wrap04 .skin_list02 li .text_box p br{display: none;}
+
+/* 피부성형센터_눈매교정 */
+.skin_wrap .skin_list03{display: flex; justify-content: center; gap: 0 40px; flex-wrap: wrap;}
+.skin_wrap .skin_list03 li{width: 40%; position: relative; margin-bottom: 30px;}
+.skin_wrap .skin_list03 li br{display: none;}
+.skin_wrap .skin_list03 li::after{content: ''; position: absolute; left: 50%; transform: translateX(-50%); top:0; background-size: auto 100%; background-repeat: no-repeat;}
+.skin_wrap .skin_list03 li:nth-child(1){padding-top: 63px;}
+.skin_wrap .skin_list03 li:nth-child(1):after{padding: 48px 60px 0 0; background-image: url(../images/sub/skin/sub2/icon1.png);}
+
+.skin_wrap .skin_list03 li:nth-child(2){padding-top: 63px;}
+.skin_wrap .skin_list03 li:nth-child(2):after{padding: 43px 53px 0 0; background-image: url(../images/sub/skin/sub2/icon2.png);}
+
+.skin_wrap .skin_list03 li:nth-child(3){padding-top: 50px;}
+.skin_wrap .skin_list03 li:nth-child(3):after{padding: 29px 50px 0 0; background-image: url(../images/sub/skin/sub2/icon3.png);}
+
+.skin_wrap .skin_list03 li:nth-child(4){padding-top: 63px;}
+.skin_wrap .skin_list03 li:nth-child(4):after{padding: 50px 55px 0 0; background-image: url(../images/sub/skin/sub2/icon4.png);}
+
+.skin_wrap .skin_list03 li:nth-child(5){padding-top: 57px;}
+.skin_wrap .skin_list03 li:nth-child(5):after{padding: 45px 62px 0 0; background-image: url(../images/sub/skin/sub2/icon5.png);}
+.skin_wrap .skin_list03 li h4{margin-bottom: 5px; font-family: 'Noto Serif KR', serif; font-weight: 500; font-size: 15px; color: #131313; text-align: center; letter-spacing: -1px;}
+.skin_wrap .skin_list03 li p{text-align: center; font-size: 12px; color: #636363; letter-spacing: -1px; font-weight: 300;}
+.skin_wrap2 #skin_wrap03 .skin_list01{display: flex; gap: 0 13px;}
+.skin_wrap2 #skin_wrap03 .skin_list01 li{position: relative;}
+.skin_wrap2 #skin_wrap03 .skin_list01 li::after{content: ''; position: absolute; top:0; bottom: 22px; right:-7px; width: 1px; background-color: #dfdfdf;}
+.skin_wrap2 #skin_wrap03 .skin_list01 li:last-child:after{display: none;}
+
+/* 피부성형센터_트임성형 */
+.skin_wrap3 .skin_list03{gap: 0; justify-content: flex-start;}
+.skin_wrap3 .skin_list03 li{width: 50%;}
+.skin_wrap3 .skin_list03 li.icon3::after{padding: 32px 48px 0 0; background-image: url(../images/sub/skin/sub3/icon3.png);}
+.skin_wrap3 #skin_wrap03 .skin_list01 li{margin-bottom: 80px;}
+.skin_wrap3 #skin_wrap03 .skin_list01 li .img_wrap{max-width:308px;}
+.skin_wrap3 #skin_wrap03 .skin_list01 li .img_wrap h4{padding: 16px 0;left: 60px; right: 60px; line-height: 16px; font-size: 13px; letter-spacing: -1px; bottom: -52px;}
+.skin_wrap3 #skin_wrap03 .skin_list01{padding: 0 0 41px;}
+.skin_wrap3 #skin_wrap04 .info_list li{background-color: #b65d7d; border: 1px solid #dbbac7; color: #fff; font-weight: 300;}
+.skin_wrap3 #skin_wrap04 .sub_text h4{text-align: center;}
+.skin_wrap3 #skin_wrap04 .sub_text img{display: block; max-width: 175px; margin:0 auto 8px;}
+
+/* 피부성형센터_눈밑성형 */
+.skin_wrap #skin_wrap03 .skin_list01 li .text_box dl{margin:0 0 5px 20px; display: flex; gap: 0 8px;}
+.skin_wrap #skin_wrap03 .skin_list01 li .text_box dl dt{flex-shrink: 0; width: 40px; height: 22px; line-height: 22px; text-align: center; color: #fff; font-size: 11px; font-family: 'Noto Serif KR', serif; font-weight: 500; background-color: #b65d7d; border-radius: 50px; } 
+.skin_wrap #skin_wrap03 .skin_list01 li .text_box dl dd{font-size: 12px; color: #636363; line-height: 18px; font-weight: 300;}
+.skin_wrap4 #skin_wrap03 .skin_list01 li{margin-bottom: 55px;}
+.skin_wrap4 #skin_wrap03 .skin_list01 li .img_wrap{margin: 0 auto 77px;}
+.skin_wrap4 #skin_wrap04 .sub_text h4{margin-bottom: 28px;}
+
+/* 피부성형센터_중년눈성형 */
+.skin_wrap5 #skin_wrap04 .sub_text h4{margin-bottom: 28px;}
+
+/* 피부성형센터_유형별코성형 */
+.skin_wrap .link{margin-top: 80px; display: flex; flex-wrap: wrap; gap: 0 8px; justify-content: center;}
+.skin_wrap .link li{margin-bottom: 8px;}
+.skin_wrap .link li a{display: block; height: 39px; width: 102px; background-color: #272727; text-align: center; line-height: 37px; color: #fff; border-radius: 50px; font-size: 12px;}
+.skin_wrap6 #skin_wrap02 .text_img{bottom: 159px;}
+.skin_wrap #skin_wrap04 .skin_list02.st li .img_wrap{width: auto; height: auto; margin-bottom: 16px;}
+.skin_wrap #skin_wrap04 .skin_list02.st{display: flex; gap: 0 3%; flex-wrap: wrap;}
+.skin_wrap #skin_wrap04 .skin_list02.st li{padding-bottom: 17px; width: 48.5%; display: block; margin-bottom: 10px; border: 0;}
+.skin_wrap #skin_wrap04 .skin_list02.st li .text_box{padding-left: 8px;}
+.skin_wrap6 #skin_wrap02{padding: 0 0 55px;}
+
+/* 피부성형센터_콧볼축소 */
+.skin_wrap .skin_box01{padding: 0 0 56px;}
+.skin_wrap .skin_box01 .img_wrap{max-width: 257px; margin:0 auto 40px; box-shadow: 6px 23px 26px rgba(0,0,0,.2); border-radius: 7px; overflow: hidden;}
+.skin_wrap .skin_box01 .img_wrap img{display: block; margin: 0 auto;}
+.skin_wrap .skin_box01 .text_box{margin-left: calc(50% - 127px);}
+.skin_wrap .skin_box01 .text_box ul li{margin-bottom: 10px; display: flex; gap: 0 7px; align-items:baseline;}
+.skin_wrap .skin_box01 .text_box ul li span{display: block; width: 15px; height: 15px; border-radius: 50px; text-align: center; line-height: 13px; background-color: #b65d7d; color: #fff; font-family: 'Noto Serif KR', serif; font-weight: 500; font-size: 12px;}
+.skin_wrap .skin_box01 .text_box ul li p{font-size: 14px; color: #636363; font-weight: 300; letter-spacing: -1px;}
+.skin_wrap7 #skin_wrap04 .skin_list02.st li{width: 48.4%; padding-bottom: 39px;}
+
+/* 피부성형센터_기능코성형 */
+
+/* 피부성형센터_가슴성형 */
+.skin_wrap #skin_wrap03 .skin_list01.st{position: relative; display: flex; gap: 0 2.4%; justify-content: center; flex-wrap: wrap;} 
+.skin_wrap #skin_wrap03 .skin_list01.st > li{position: relative; width: 48.8%; margin-bottom: 30px;}
+.skin_wrap #skin_wrap03 .skin_list01.st:after{content: '촉감'; position: absolute; top:73px; left: 50%; transform: translateX(-50%); height: 22px; width: 40px; line-height:20px; text-align: center; color: #fff; border-radius: 50px; background-color: #b65d7d; font-family: 'Noto Serif KR', serif; font-weight: 500; font-size: 12px;}
+.skin_wrap #skin_wrap03 .skin_list01.st::before{content: '모양'; position: absolute; top:480px; left: 50%; transform: translateX(-50%); height: 22px; width: 40px; line-height:20px; text-align: center; color: #fff; border-radius: 50px; background-color: #b65d7d; font-family: 'Noto Serif KR', serif; font-weight: 500; font-size: 12px; z-index: 9;}
+.skin_wrap #skin_wrap03 .skin_list01.st li .img_wrap{max-width: none;}
+.skin_wrap #skin_wrap03 .skin_list01.st li .text_box p{text-align: left;}
+.skin_wrap #skin_wrap03 .skin_list01.st li .text_box p br{display: none;}
+.skin_wrap #skin_wrap03 .skin_list01 .text_box ul {margin-top: 25px;}
+.skin_wrap #skin_wrap03 .skin_list01 .text_box ul li{margin-bottom: 2px; display: flex; gap: 0 7px; align-items: baseline;}
+.skin_wrap #skin_wrap03 .skin_list01 .text_box ul li span{display: block; width: 15px; height: 15px; border-radius: 50px; text-align: center; line-height: 13px; background-color: #b65d7d; color: #fff; font-family: 'Noto Serif KR', serif; font-weight: 500; font-size: 8px;}
+.skin_wrap #skin_wrap03 .skin_list01 .text_box ul li p{font-size: 12px; color: #636363; font-weight: 300; letter-spacing: -1px;}
+.skin_wrap #skin_wrap03.pd{padding: 60px 0 0;}
+.skin_wrap9 #skin_wrap03 .skin_list01 li:last-child{margin-bottom: 0;}
+
+/* 피부성형센터_양성종양 */
+.skin_wrap10 #skin_wrap03{padding: 0 0  50px;}
+.skin_wrap10 #skin_wrap03 .tit + img{display: block; width: 100%;}
+.skin_wrap10 #skin_wrap03 h4{margin: 40px 0 30px; font-family: 'Noto Serif KR', serif; font-weight: 500; font-size: 20px; text-align: center; color: #131313; letter-spacing: -1px;}
+.skin_wrap10 #skin_wrap03 p{font-size: 14px; color: #494949; font-weight: 300; letter-spacing: -1px;}
+.skin_wrap #skin_wrap05{padding: 60px 0 30px; background-color: #f4f8f9;}
+.skin_wrap #skin_wrap05 .link{margin: 0 0 60px;}
+.skin_wrap #skin_wrap05 .link_content li{margin-bottom: 60px;}
+.skin_wrap #skin_wrap05 .link_content li img{display: block; width: 100%;}
+.skin_wrap10 #section4{background-color: #805464;}
+.skin_wrap10 #section4 em.st{background-color: #805464;}
+.skin_wrap10 #section4 .text_img{bottom: 405px;}
+.skin_wrap10 #section5{background: url(../images/sub/skin/sub10/bg.png)no-repeat center top;}
+.skin_wrap10 #section5 .text_img{bottom: 40px;}
+
+/* 피부성형센터_흉터상처 */
+.skin_wrap11 #skin_wrap03{padding: 0 0 50px;}
+.skin_wrap11 #skin_wrap03 h4{margin: 40px 0 30px; font-family: 'Noto Serif KR', serif; font-weight: 500; font-size: 20px; text-align: center; color: #131313; letter-spacing: -1px;}
+.skin_wrap11 #skin_wrap03 p{font-size: 14px; color: #494949; font-weight: 300; letter-spacing: -1px;}
+.skin_wrap11 #skin_wrap01 .img_wrap{position: relative; z-index: 11;}
+.skin_wrap11 #skin_wrap01{position: relative; padding-bottom: 53px;}
+.skin_wrap11 #skin_wrap01 .text_img{position: absolute; bottom: 0;}
+.skin_wrap11 #skin_wrap06{padding: 60px 0 35px; background-color: #f4f8f9;}
+.skin_wrap11 #skin_wrap06 img{display: block; width: 100%;}
+.skin_wrap11 #skin_wrap06 h4,
+.skin_wrap11 #skin_wrap06 h5{margin: 20px 0 30px; font-family: 'Noto Serif KR', serif; font-weight: 500; font-size: 20px; text-align: center; color: #131313; letter-spacing: -1px;}
+.skin_wrap11 #skin_wrap06 h5{margin-bottom: 45px;}
+.skin_wrap11 #skin_wrap06 p{margin-bottom: 55px; font-size: 14px; color: #494949; font-weight: 300; letter-spacing: -1px; text-align: left;}
+.skin_wrap11 #skin_wrap06.st{background-color: #fff;}
+.skin_wrap11 #skin_wrap06.st .img1{max-width: 201px; margin: 0 auto 34px;}
+.skin_wrap11 #skin_wrap06.st .skin_list01 p{text-align: center;}
+.skin_wrap11 #skin_wrap06.st .skin_list01 .img_wrap{max-width: 230px; margin: 0 auto 72px; position: relative; box-shadow: 6px 35px 32px rgba(0,0,0,13%);}
+.skin_wrap11 #skin_wrap06.st .skin_list01 h4{height: 64px;line-height: 64px;  position: absolute; left: 8px; right: 8px;  bottom: -71px; background-color: #fff; color: #131313; font-size: 18px; font-family: 'Noto Serif KR', serif;
+    font-weight: 500; text-align: center; letter-spacing: -1px;}
+.skin_wrap11 #skin_wrap06.st .skin_list01 img{}
+
+/* 피부성형센터_안면외상 */
+.skin_wrap12 #skin_wrap03 h4{margin: 40px 0 30px; font-family: 'Noto Serif KR', serif; font-weight: 500; font-size: 20px; text-align: center; color: #131313; letter-spacing: -1px;}
+.skin_wrap12 #skin_wrap03 p{margin-bottom: 50px; font-size: 14px; color: #494949; font-weight: 300; letter-spacing: -1px;}
+.skin_wrap12 #skin_wrap01 .img_wrap{position: relative; z-index: 11;}
+.skin_wrap12 #skin_wrap01{position: relative; padding-bottom: 53px;}
+.skin_wrap12 #skin_wrap01 .text_img{position: absolute; bottom: 0;}
+.skin_wrap12 #skin_wrap06{padding: 60px 0 35px; background-color: #f4f8f9;}
+.skin_wrap12 #skin_wrap06 .img_wrap{margin-bottom: 35px; box-shadow: 6px 35px 32px rgba(0,0,0,13%); border-radius: 7px;}
+.skin_wrap12 #skin_wrap06 img{display: block; width: 100%;}
+.skin_wrap12 #skin_wrap06 h4,
+.skin_wrap12 #skin_wrap06 h5{margin: 20px 0 30px; font-family: 'Noto Serif KR', serif; font-weight: 500; font-size: 20px; text-align: center; color: #131313; letter-spacing: -1px;}
+.skin_wrap12 #skin_wrap06 h5{margin-bottom: 45px;}
+.skin_wrap12 #skin_wrap06 p{margin-bottom: 55px; font-size: 14px; color: #494949; font-weight: 300; letter-spacing: -1px; text-align: left;}
+.skin_wrap12 #skin_wrap06.st{background-color: #fff;}
+.skin_wrap12 #skin_wrap06.st .img1{max-width: 302px; margin: 0 auto 34px;}
+.skin_wrap12 #skin_wrap06.st .skin_list01 p{text-align: center;}
+.skin_wrap12 #skin_wrap06.st .skin_list01 .img_wrap{max-width: 230px; margin: 0 auto 72px; position: relative; box-shadow: 6px 35px 32px rgba(0,0,0,13%);}
+.skin_wrap12 #skin_wrap06.st .skin_list01 h4{height: 64px;line-height: 64px;  position: absolute; left: 8px; right: 8px;  bottom: -71px; background-color: #fff; color: #131313; font-size: 18px; font-family: 'Noto Serif KR', serif;
+    font-weight: 500; text-align: center; letter-spacing: -1px;}
+.skin_wrap12 #skin_wrap03 img{display: block; width: 100%; margin: 0 auto;}
+
+/* 피부성형센터_지방흡입 */
+.skin_wrap13 #skin_wrap04.st{background-color: #fff;}
+.skin_wrap13 #skin_wrap04.st .skin_list02 li{background-color: #e9f4f7;}
+.skin_wrap13 #skin_wrap05{padding: 0 0 50px; background-color: #fff;}
+.skin_wrap13 #skin_wrap05 img{width: 100%;}
+
+/* 피부성형센터_액취증 */
+.skin_wrap14 #skin_wrap03 h4{margin: 13px 0 30px; font-family: 'Noto Serif KR', serif; font-weight: 500; font-size: 20px; text-align: center; color: #131313; letter-spacing: -1px;}
+.skin_wrap14 #skin_wrap03 p{margin-bottom: 0; font-size: 14px; color: #494949; font-weight: 300; letter-spacing: -1px;}
+.skin_wrap14 #skin_wrap03 img{width: 100%;}
+.skin_wrap14 .skin_box01 .img_wrap{max-width: none;}
+.skin_wrap14 .skin_box01 .text_box{margin-left: calc(50% - 144px);}
+.skin_wrap14 #section5{background: url(../images/sub/skin/sub10/bg.png)no-repeat center top;}
+.skin_wrap14 #section5 .text_img{bottom: 40px;}
+
+/* 피부성형센터_인모드리프팅 */
+.skin_wrap15 #skin_wrap03{padding: 15px 0 25px;}
+.skin_wrap15 #skin_wrap01 .img_wrap{margin: 35px 0 20px; box-shadow: none;}
+.skin_wrap15 #skin_wrap03 .tit h4{color: #b65d7d;}
+.skin_wrap15 #skin_wrap03 .skin_list01 li .text_box dl{margin-left: 0;}
+.skin_wrap15 .skin_list03{justify-content: flex-start;}
+.skin_wrap15 .skin_list03 li{width: 44%;}
+.skin_wrap15 .skin_list03 li:nth-child(1){padding-top: 56px;}
+.skin_wrap15 .skin_list03 li:nth-child(1):after{padding: 33px 52px 0 0; background-image: url(../images/sub/skin/sub15/icon1.png);}
+.skin_wrap15 .skin_list03 li:nth-child(2):after{padding: 47px 51px 0 0; background-image: url(../images/sub/skin/sub15/icon2.png);}
+.skin_wrap15 .skin_list03 li:nth-child(3):after{padding: 40px 31px 0 0; background-image: url(../images/sub/skin/sub15/icon3.png);}
+.skin_wrap15 #skin_wrap04{padding-bottom: 0;}
+.skin_wrap15 #skin_wrap04 .box{margin-bottom: 55px!important;}
+.skin_wrap15 #skin_wrap04 img{display: block; width: 100%;}
+
+/* 피부성형센터_실미니리프팅 */
+.skin_wrap16 #skin_wrap03{padding: 15px 0 30px;}
+.skin_wrap16 .info_img{display: block; width: 100%;}
+.skin_wrap16 .tit.st{margin-bottom: 28px;}
+.skin_wrap16 .skin_list03{justify-content: flex-start;}
+.skin_wrap16 .skin_list03 li:nth-child(1){padding-top: 56px;}
+.skin_wrap16 .skin_list03 li:nth-child(1):after{padding: 33px 52px 0 0; background-image: url(../images/sub/skin/sub15/icon1.png);}
+.skin_wrap16 .skin_list03 li:nth-child(2):after{padding: 47px 51px 0 0; background-image: url(../images/sub/skin/sub15/icon2.png);}
+.skin_wrap16 .skin_list03 li:nth-child(3):after{padding: 40px 31px 0 0; background-image: url(../images/sub/skin/sub15/icon3.png);}
+.skin_wrap16 #skin_wrap04{padding-bottom: 0;}
+.skin_wrap16 #skin_wrap04 > img{display: block; margin-top: 55px;  width: 100%;}
+
+/* 피부성형센터_안면거상술 */
+.skin_wrap17 .info_img{display: block; width: 100%;}
+.skin_wrap17 #skin_wrap03{padding: 0 0 50px;}
+.skin_wrap17 #skin_wrap03 .tit + img{display: block; width: 100%;}
+.skin_wrap17 #skin_wrap03 h4{margin: 40px 0 30px; font-family: 'Noto Serif KR', serif; font-weight: 500; font-size: 20px; text-align: center; color: #131313; letter-spacing: -1px;}
+.skin_wrap17 #skin_wrap03 p{font-size: 14px; color: #494949; font-weight: 300; letter-spacing: -1px;}
+.skin_wrap17 #skin_wrap04{padding-bottom: 0;}
+.skin_wrap17 #skin_wrap04 > img{display: block; margin-top: 55px;  width: 100%;}
+.skin_wrap17 #skin_wrap04 .skin_list02 li img{width: 100%;}
+
+/* 피부성형센터_스킨부스터 */
+.skin_wrap18 #skin_wrap03 img{display: block; width: 100%;}
+.skin_wrap18 #skin_wrap03.st{background-color: #f4f8f9;}
+.skin_wrap18 .info_list{padding-bottom: 50px;}
+.skin_wrap18 .info_list li{margin-bottom: 40px;}
+.skin_wrap18 .info_list li:last-child{margin-bottom: 0;}
+
+/* 피부성형센터_보톡스필러 */
+.skin_wrap20 .link{margin-bottom: 35px;}
+.skin_wrap20 .link li a{background-color: #fff; color: #151515; border: 1px solid #d5d7de;}
+.skin_wrap20 .link li a.active{background-color: #2d2d2d; color: #fff;}
+.skin_wrap20 .box img{display: block; width: 100%;}
+
+/* 피부성형센터_탈모치료 */
+.skin_wrap21 #skin_wrap01 .img_wrap{position: relative; z-index: 2;}
+.skin_wrap21 #skin_wrap01{position: relative;padding-bottom: 50px;}
+.skin_wrap21 #skin_wrap01 .text_img{position: absolute; bottom: 0;}
+.skin_wrap21 #skin_wrap03.st{padding: 60px 0; background-color: #f4f8f9;}
+.skin_wrap21 #skin_wrap03.st p{margin-bottom: 50px; text-align: center;}
+.skin_wrap21 #skin_wrap03{padding-bottom: 70px;}
+.skin_wrap21 #skin_wrap03 .img_wrap{margin-bottom: 30px; box-shadow: 6px 23px 26px rgba(0,0,0,.2);  border-radius: 7px;}
+.skin_wrap21 #skin_wrap03 h4{margin: 13px 0 30px; font-family: 'Noto Serif KR', serif; font-weight: 500; font-size: 20px; text-align: center; color: #131313; letter-spacing: -1px;}
+.skin_wrap21 #skin_wrap03 p{margin-bottom: 0; font-size: 14px; color: #494949; font-weight: 300; letter-spacing: -1px;}
+.skin_wrap21 #skin_wrap03 img{width: 100%;}
